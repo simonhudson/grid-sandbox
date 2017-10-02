@@ -9,13 +9,13 @@ footer {
 .container {
 	display: grid;
 	grid-gap: 20px;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(2, 150px);
 	grid-template-areas:
-      'header header header'
-      'sidebar content-1 content-1'
-      'sidebar content-2 content-3'
-      'footer footer footer';
+      'header header header header'
+      'sidebar content-1 content-1 content-1'
+      'sidebar content-2 content-3 content-4'
+      'footer footer footer footer';
 }
 
 .item-1 {
@@ -46,6 +46,12 @@ header {
 	/*grid-column: 3 / 4;
 	grid-row: 6 / 8;*/
 	grid-area: content-3;
+}
+
+.content-4 {
+	/*grid-column: 4 / 5;
+	grid-row: 6 / 8;*/
+	grid-area: content-4;
 }
 
 .sidebar {
