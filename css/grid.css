@@ -8,7 +8,8 @@ footer {
 /* Basic */
 .container {
 	display: grid;
-	grid-gap: 20px;
+	grid-column-gap: 20px;
+	grid-row-gap: 0;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(2, 150px);
 	grid-template-areas:
@@ -17,6 +18,7 @@ footer {
       'sidebar content-2 content-3 content-4'
       'footer footer footer footer';
 }
+
 
 .item-1 {
 	grid-column: 2 / 3;
@@ -28,6 +30,13 @@ header {
 	/*grid-column: 1 / 4;
 	grid-row: 1 / 2;*/
 	grid-area: header;
+}
+
+[class^="content-"],
+.sidebar,
+header,
+footer {
+	margin-bottom: 20px;
 }
 
 .content-1 {
